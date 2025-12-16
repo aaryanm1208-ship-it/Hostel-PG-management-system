@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel / PG Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Hostel / PG Management System</h1>
+    <p>Find affordable hostels & PGs easily</p>
+</header>
+
+<section class="form-section">
+    <h2>Add Hostel / PG</h2>
+    <input type="text" id="name" placeholder="Hostel / PG Name">
+    <input type="text" id="location" placeholder="Location">
+    <input type="number" id="price" placeholder="Monthly Rent">
+    <select id="type">
+        <option value="">Select Type</option>
+        <option value="Hostel">Hostel</option>
+        <option value="PG">PG</option>
+    </select>
+    <button onclick="addHostel()">Add</button>
+</section>
+
+<section class="list-section">
+    <h2>Available Hostels / PGs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Type</th>
+                <th>Rent (₹)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="hostelList"></tbody>
+    </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
